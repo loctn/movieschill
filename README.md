@@ -11,7 +11,7 @@ Under hackathon constraints with a single-person team it was necessary to reduce
 - we don't account for word frequency by user vocabulary and conventional english usage; and
 - we don't account for bias in the expression of a movie's meta information (title, actors, etc.) rather than its content.
 
-Plenty more methodological challenges exist with the chosen approach, but the idea is that with enough data some of the "errors" would diminish. The [demo website](http://movieschill.com) represents four passes over each movie where data is available, and shows that even a small sample can produce useful results.
+Plenty more methodological challenges exist with the chosen approach, but the idea is that with enough data some of the "errors" would diminish. The [demo website](http://movieschill.com) represents four passes (~100 reviews) over each movie where data is available, and shows that even a small sample can produce useful results.
 
 Since I also wanted to avoid coming up with my own emotional model, I delegated that to the [Plutchik wheel](https://en.wikipedia.org/wiki/File:Plutchik-wheel.svg). The word lists in `scraper/commander/words/` are mapped to each of the Plutchik flower's 24 subpetals and scored by the criteria in `scraper/commander/scorer.js`. The recommender client returns a query by closest distance with respect to the 24-dimensional space.
 
