@@ -1,0 +1,67 @@
+.taglines {
+  color: rgba(172, 0, 0, 0.6);
+  font-weight: 600;
+  height: 3.6rem;  /* 57.6px */
+  line-height: 180%;
+  margin: 0 auto;
+  max-width: 600px;
+  position: relative;
+  width: 100%;
+}
+.taglines div {
+  position: absolute;
+  width: 100%;
+}
+.taglines div:not(:first-child) {
+  opacity: 0;
+}
+.taglines span {
+  white-space: nowrap;
+}
+.taglines em {
+  color: rgba(172, 0, 0, 0.8);
+  font-style: normal;
+}
+@-webkit-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes fadein {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-webkit-keyframes fadeout {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes fadeout {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-o-keyframes fadeout {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes fadeout {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+.tagline-fadein {
+  animation: fadein 1s forwards;
+}
+.tagline-fadeout {
+  animation: fadeout 1s forwards;
+}
+@media screen and (max-width: 568px) {
+  .taglines {
+    height: 5.4rem;  /* 86.4px */
+  }
+}

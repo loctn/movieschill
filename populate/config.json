@@ -1,0 +1,10 @@
+{
+  "//": "TODO: move credentials to environment variables",
+  "db": {
+  	"table": "redacted",
+    "host": "127.0.0.1",
+    "user": "redacted",
+    "password": "redacted",
+    "database": "redacted"
+  }
+}

@@ -1,0 +1,70 @@
+.imdb-container, .imdb-rating, .imdb-star {
+  font-size: 100%;
+  height: 1.25rem;  /* 20px */
+  line-height: 125%;
+}
+.imdb-hide {
+  visibility: hidden;
+}
+.imdb-show {
+  visibility: visible !important;
+}
+.imdb-container {
+  overflow: hidden;
+  padding-bottom: 0.0625rem;  /* 1px */
+  position: relative;
+  white-space: nowrap;
+}
+.imdb-container span {
+  display: inline-block;
+}
+.imdb-rating-container {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
+.imdb-logo, .imdb-score {
+  font-size: 0.8125rem;  /* 13px */
+  font-weight: bold;
+}
+.imdb-logo {
+  color: #444;
+  height: 1.125rem;  /* 18px */
+}
+.imdb-score, .imdb-logo > span {
+  bottom: 0.0625rem;  /* 1px */
+  position: relative;
+}
+.imdb-score {
+  color: #a58600;
+}
+.imdb-rating {
+  width: 8.125rem;  /* 130px */
+}
+.imdb-star {
+  white-space: nowrap;
+  width: 0.8125rem;  /* 13px */
+}
+.imdb-star:after {
+  content: '\2605';
+}
+.imdb-star-gray {
+  composes: imdb-star;
+  color: #e2e2e2;
+}
+.imdb-star-gold {
+  composes: imdb-star;
+  color: #ddb840;
+}
+@media screen and (max-width: 568px) {
+  .imdb-container, .imdb-star {
+    height: 1rem;  /* 15px */
+  }
+  .imdb-star {
+    width: 0.8rem;  /* 12px */
+  }
+  .imdb-rating {
+    width: 8rem;  /* 120px */
+  }
+}

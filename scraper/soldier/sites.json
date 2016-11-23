@@ -1,0 +1,14 @@
+{
+  "imdb": {
+    "selectors": {
+      "reviews": "#tn15content div + p",
+      "pageCount": "#tn15content script + table font"
+    }
+  },
+  "rt": {
+    "selectors": {
+      "reviews": "#reviews .user_review",
+      "pageCount": ".pageInfo"
+    }
+  }
+}

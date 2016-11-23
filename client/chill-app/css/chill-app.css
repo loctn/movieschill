@@ -1,0 +1,47 @@
+.container {
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  max-width: 900px;
+}
+.footer-spacer {
+  height: 6.25rem;  /* 100px */
+}
+.logo {
+  color: #f00;
+  font-family: 'NTR';
+  font-size: 400%;            /* 64px */
+  line-height: 100%;
+  padding: 5rem 0 3.75rem 0;  /* 80px 0 60px 0 */
+  text-align: center;
+}
+.logo > span {
+  color: rgba(160, 0, 0, 0.8);
+}
+.logo a, .logo a:active, .logo a:hover, .logo a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.back-to-top {
+  margin: 3.75rem 0;  /* 60px */
+  text-align: center;
+}
+.back-to-top > span {
+  background-color: #eee;
+  border-radius: 1.625rem;      /* 26px */
+  color: #333;
+  cursor: pointer;
+  line-height: 100%;
+  padding: 0.9375rem 1.0625rem; /* 15px 17px */
+}
+.back-to-top > span:active:hover {
+  background-color: #ddd;
+}
+@media screen and (max-width: 568px) {
+  .logo {
+    font-size: 386.667%;  /* 58px */
+  }
+  .logo > span {
+    bottom: -0.13333rem;  /* -2px */
+  }
+}

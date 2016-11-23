@@ -1,0 +1,18 @@
+{
+  "minDelay": 1000,
+  "//": "soldiers is a list of server IP addresses",
+  "soldiers": [],
+  "sites": ["imdb", "rt"],
+  "scrape": {
+    "expires": 14,
+    "maxAttempts": 2
+  },
+  "//": "TODO: move credentials to environment variables",
+  "db": {
+    "table": "redacted",
+    "host": "127.0.0.1",
+    "user": "redacted",
+    "password": "redacted",
+    "database": "redacted"
+  }
+}
