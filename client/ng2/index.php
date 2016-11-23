@@ -140,7 +140,7 @@ System.import('main.js').catch(function(err) { console.error(err); });
 
 <chill-app id="container"></chill-app>
 <div id="footer">
-  <a href="http://overpear.com">&copy; Overpear Inc.</a>
+  <a href="http://locwin.com">&copy; Loc Nguyen</a>
 </div>
 
 <script>
