@@ -8,8 +8,8 @@ export default class BackToTop extends Component {
   handleClick(event) {
     event.preventDefault();
     let timer = setInterval(() => {
-      if (document.body.scrollTop > 0) {
-        document.body.scrollTop = Math.max(0, document.body.scrollTop - 80);
+      if (document.documentElement.scrollTop > 0) {
+        document.documentElement.scrollTop = Math.max(0, document.documentElement.scrollTop - 80);
       } else {
         clearInterval(timer);
       }
